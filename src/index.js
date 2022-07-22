@@ -8,6 +8,7 @@ function inicio () {
     document.getElementById("info1").addEventListener("keyup", function () {
         this.value = this.value.toUpperCase ();
      }, true );}
+console.log(inicio);
 
 document.getElementById("cipherEncode").addEventListener("click", function () {
     let string = document.getElementById ("info1").value;
@@ -18,7 +19,7 @@ document.getElementById("cipherEncode").addEventListener("click", function () {
 document.getElementById("cipherDecode").addEventListener("click", function () {
     let string = document.getElementById ("info1").value;
     let offset = document.getElementById("offset").value;
-    document.getElementById("mensaje2").value = cipher.encode (string, offset);
+    document.getElementById("mensaje2").value = cipher.decode (string, offset);
 }, true);
 
 document.getElementById("saveAnswer").addEventListener("click", function () {
