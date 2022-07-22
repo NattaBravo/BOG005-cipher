@@ -1,78 +1,113 @@
 <!DOCTYPE html>
 <html>
+  <html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
 
     <header>
-      <h1>BITÁCORA: DIARIO DE CAMPO
+      <h1>BITÁCORA: DARIO DE CAMPO
       </h1>
       <h2>A través de esta plataforma consigna cada uno de los reportes y registros que pueden aportar en la recolección de la información requerida.
           No olvides aportar información descriptiva, sustentada en evidencia demostrable y complementada con los datos de fecha, hora, lugar y nombre
           de las personas involucradas en la situación reportada.
       </h2>
-      <nav>
-          <li id="button1">Registro</li>
-          <li id="button2">Almacén</li>
-          <br>
-      </nav>
+      <br>
+      <br>
+
   </header>
 
   </head>
   <body>
     <section class="section1">
+      <h3>REPORTA UN DATO:</h3>
+      <br>
       <article id="art1">
         <p>FECHA</p>
-        <input type="text" name="fecha" id="">
+        <input type="text" id="fecha" placeholder="dd/mm/yy">
       </article>
+      <br>
       <article id="art2">
-        <p>ETAPA DE TRABAJO DE CAMPO</p>
-        <input type="text" name="dia" id="">
-      </article>
-      <article id="art3">
-        <p>PERSONAS INVOLUCRADAS</p>
-        <input type="text" name="" id="">
-      </article>
-      <article id="art4">
         <p>DESCRIPCIÓN DE LA SITUACION</p>
-        <input type="text" name="fecha" id="">
+        <br>
+        <input type="textarea" id="info1" placeholder="Describe ampliamente tu dato de investigación">
       </article>
-      <article id="art5">
-        <P>¿CON QUÉ CATEGORÍAS ANALÍTICAS SE RELACIONA ESTE DATO?</P>
-        <input type="text" name="fecha" id="">
-      </article>
-      <article>
-        <P>EVIDENCIA AUDIOVISUAL</P>
-      </article> 
+      <br><br>
+      <div>
+        <p>DESPLAZAMIENTO</p>
+        <input type="number" name="" id="offset" size="4">
+        <br><br>
+        <button type="button" id="cipherEncode" class="botonesmenu">Cifrar</button>
+        <button type="button" id="cipherDecode" class="botonesmenu">Descifrar</button>
+      </div>
 
-
+      <div><h3>MENSAJE CIFRADO/DESCIFRADO</h3>
+      <input type="text" name="" id="mensaje2"/>
+      </div>
+      <br>
+      <button id="saveAnswer">GUARDAR</button>
 
     </section>
 
-    <aside>
-      <h3>REPORTES REALIZADOS</h3>
+    <aside id="rightaside">
+      <h3>ALMACÉN DE DATOS</h3>
       <h4>CODIFICADOS</h4>
+      <article class="postits">
+        <p id="detallefecha">Fecha del dato</p>
+        <p id="note1">Tu dato cifrado se guardará aquí</p>
 
+      </article>
+      <article class="postits">
+        <p id="detallefecha">Fecha del dato</p>
+        <p id="note2">Aquí también...</p>
 
+      </article>
+      <article class="postits">
+        <p id="detallefecha">Fecha del dato</p>
+        <p id="note3">Y aquí...</p>
 
-
-
-
+      </article>
       <h4>DECODIFICADOS</h4>
+      <article class="postits">
+        <p id="detallefecha">Fecha del dato</p>
+        <p id="nota4">Tu dato descifrado se guardará aquí...</p>
+
+      </article>
+      <article class="postits">
+        <p id="detallefecha">Fecha del dato</p>
+        <p id="nota5">Aquí también...</p>
+
+      </article>
+      <article class="postits">
+        <p id="detallefecha">Fecha del dato</p>
+        <p id="nota6">Y aquí...</p>
+
+      </article>
+
     </aside>
 
-    
+    <aside id="leftaside">
+      <h3>CONFIGURA TU BITÁCORA</h3>
+      <br>
+      <nav>
+        <button class="botonesmenu" id="button1">Etapa de investigacion</button>
+        <br>
+        <br>
+        <button class="botonesmenu" id="button2">Registro de categorías</button>
+        <br>
+        <br>
+        <button class="botonesmenu" id="button3">Almacén de datos</button>
+        <br>
+    </nav>
+
+    </aside>
+
+  
+
+
+
     <script src="index.js" type="module"></script>
-
-
-
-
-
-
-
-
-
 
 
   </body>
