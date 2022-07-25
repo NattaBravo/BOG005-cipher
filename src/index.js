@@ -1,14 +1,11 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
-
 window.addEventListener("load", inicio, true);
 
 function inicio () {
     document.getElementById("info1").addEventListener("keyup", function () {
         this.value = this.value.toUpperCase ();
-     }, true );}
-console.log(inicio);
+     }, true );};
 
 document.getElementById("cipherEncode").addEventListener("click", function () {
     let string = document.getElementById ("info1").value;
@@ -23,12 +20,11 @@ document.getElementById("cipherDecode").addEventListener("click", function () {
 }, true);
 
 document.getElementById("saveAnswer").addEventListener("click", function () {
-    let fecha = document.getElementById("fecha").value;
-    console.log(fecha);
+    let newdate = document.getElementById("date1").value;
+    console.log(newdate);
     let resultadofinal = document.getElementById("mensaje2").value;
-    console.log(resultadofinal);
-    document.getElementById("detallefecha").innerHTML = (fecha);
     document.getElementById("note1").innerHTML = (resultadofinal);
+    document.getElementById("savedate").innerHTML = (newdate);
 })
 
     

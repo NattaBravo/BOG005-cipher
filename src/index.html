@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-  <html lang="es">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
@@ -25,7 +24,7 @@
       <br>
       <article id="art1">
         <p>FECHA</p>
-        <input type="text" id="fecha" placeholder="dd/mm/yy">
+        <input type="text" id="date1" placeholder="dd/mm/yy">
       </article>
       <br>
       <article id="art2">
@@ -38,8 +37,8 @@
         <p>DESPLAZAMIENTO</p>
         <input type="number" name="" id="offset" size="4">
         <br><br>
-        <button type="button" id="cipherEncode" class="botonesmenu">Cifrar</button>
-        <button type="button" id="cipherDecode" class="botonesmenu">Descifrar</button>
+        <button type="button" id="cipherEncode" class="buttons">Cifrar</button>
+        <button type="button" id="cipherDecode" class="buttons">Descifrar</button>
       </div>
 
       <div><h3>MENSAJE CIFRADO/DESCIFRADO</h3>
@@ -54,34 +53,34 @@
       <h3>ALMACÉN DE DATOS</h3>
       <h4>CODIFICADOS</h4>
       <article class="postits">
-        <p id="detallefecha">Fecha del dato</p>
-        <p id="note1">Tu dato cifrado se guardará aquí</p>
+        <p id="savedate" class="detaildate">Fecha del dato</p>
+        <p id="note1" class="notes">Tu dato cifrado se guardará aquí</p>
 
       </article>
       <article class="postits">
-        <p id="detallefecha">Fecha del dato</p>
-        <p id="note2">Aquí también...</p>
+        <p class="detaildate">Fecha del dato</p>
+        <p id="note2" class="notes">Tu dato cifrado se guardará aquí</p>
 
       </article>
       <article class="postits">
-        <p id="detallefecha">Fecha del dato</p>
-        <p id="note3">Y aquí...</p>
+        <p class="detaildate">Fecha del dato</p>
+        <p id="note3" class="notes">Tu dato cifrado se guardará aquí</p>
 
       </article>
       <h4>DECODIFICADOS</h4>
       <article class="postits">
-        <p id="detallefecha">Fecha del dato</p>
-        <p id="nota4">Tu dato descifrado se guardará aquí...</p>
+        <p class="detaildate">Fecha del dato</p>
+        <p id="note4" class="notes">Tu dato descifrado se guardará aquí...</p>
 
       </article>
       <article class="postits">
-        <p id="detallefecha">Fecha del dato</p>
-        <p id="nota5">Aquí también...</p>
+        <p class="detaildate">Fecha del dato</p>
+        <p id="note5" class="notes">Tu dato cifrado se guardará aquí</p>
 
       </article>
       <article class="postits">
-        <p id="detallefecha">Fecha del dato</p>
-        <p id="nota6">Y aquí...</p>
+        <p class="detaildate">Fecha del dato</p>
+        <p id="note6" class="notes">Tu dato cifrado se guardará aquí</p>
 
       </article>
 
@@ -91,13 +90,13 @@
       <h3>CONFIGURA TU BITÁCORA</h3>
       <br>
       <nav>
-        <button class="botonesmenu" id="button1">Etapa de investigacion</button>
+        <button class="menubuttons">Etapa de investigacion</button>
         <br>
         <br>
-        <button class="botonesmenu" id="button2">Registro de categorías</button>
+        <button class="menubuttons">Registro de categorías</button>
         <br>
         <br>
-        <button class="botonesmenu" id="button3">Almacén de datos</button>
+        <button class="menubuttons">Almacén de datos</button>
         <br>
     </nav>
 
@@ -112,3 +111,4 @@
 
   </body>
 </html>
+ 

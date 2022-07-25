@@ -1,8 +1,9 @@
 const cipher = {
+  
   encode: function (string, offset) { 
     let resultado ="";
     let letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    offset = (offset % 26 + 26) % 26;
+    offset = (offset % 26);
   
   if (string) {
     for (let i=0; i<string.length; i++) {
@@ -17,7 +18,7 @@ const cipher = {
   ,decode: function (string, offset) { 
     let resultado ="";
     let letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    offset = (offset % 26 - 26) % 26;
+    offset = (offset % 26 - 26);
   
   if (string) {
     for (let i=0; i<string.length; i++) {
